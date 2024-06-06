@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container" style="height: 100vh">
+      <div class="row align-items-center contact-section">
+        <div class="col-md-6">
+          <h4 class="text-danger">AWARD WINNING</h4>
+          <h1 class="font-weight-bold">DIGITAL MARKETING AGENCY</h1>
+          <p>
+            Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+            Pellentesque vitae ante at elit fringilla ac at purus.
+          </p>
+          <button id="contact-us-btn" class="btn btn-danger">CONTACT US</button>
+        </div>
+        <div class="col-md-6" style="padding-top: 7%">
+          <img
+            src="images/profile-pic.png"
+            alt="Digital Marketing"
+            class="marketing-image"
+            style="height: 80vh"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="contactModal"
+      tabindex="-1"
+      aria-labelledby="contactModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">Talk to us</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form
+              id="contactForm"
+              action="https://getform.io/f/qblokwna"
+              method="POST"
+            >
+              <h3>Talk to us</h3>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Johndoe@acme.com"
+                required
+              />
+              <div class="name-fields">
+                <input
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  placeholder="John"
+                  required
+                />
+                <input
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  placeholder="Doe"
+                  required
+                />
+              </div>
+              <label>
+                <input type="checkbox" id="terms" name="terms" /> I agree to
+                Fyle's terms and conditions, and provide consent to send me
+                communication.
+              </label>
+              <button type="submit" class="btn btn-danger" style="width: 100%">
+                Contact Us
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="background-color: #f8f9fa !important">
+      <div
+        class="container-fluid bg-light d-flex align-items-center justify-content-center w-75"
+        style="height: 200px"
+      >
+        <div class="container">
+          <div class="col-12">
+            <h2 class="text-left text-danger font-weight-bold m-text">
+              WHAT WE DO
+            </h2>
+            <div class="row pt-4">
+              <div class="col-md-6">
+                <h2 class="text-left font-weight-bol bb">
+                  SERVICES PROVIDE FOR YOU
+                </h2>
+              </div>
+              <div class="col-md-6">
+                <p>
+                  Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                  Pellentesque vitae ante at elit fringilla ac at purus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="w-75 mx-auto p-4"
+        style="background-color: #f8f9fa !important"
+      >
+        <div id="custom-carousel" class="custom-carousel">
+          <div class="carousel-slide">
+            <img src="images/image1.jpg" alt="Image 1" class="img-fluid" />
+            <div class="overlay">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="57.375"
+                height="57.151"
+                viewBox="0 0 57.375 57.151"
+              >
+                <g transform="translate(0 -1)">
+                  <path
+                    style="fill: #fff"
+                    d="M52.332,1H5.043A5.048,5.048,0,0,0,0,6.043V53.108a5.048,5.048,0,0,0,5.043,5.043h47.29a5.048,5.048,0,0,0,5.043-5.043V6.043A5.048,5.048,0,0,0,52.332,1ZM5.043,4.362h47.29a1.683,1.683,0,0,1,1.681,1.681v8.4H3.362v-8.4A1.683,1.683,0,0,1,5.043,4.362Zm47.29,50.427H5.043a1.683,1.683,0,0,1-1.681-1.681v-35.3H54.013v35.3A1.683,1.683,0,0,1,52.332,54.789Z"
+                  />
+                  <path
+                    style="fill: #fff"
+                    d="M208.425,196.133a1.681,1.681,0,0,0-2.207.883l-10.085,23.533a1.681,1.681,0,0,0,3.09,1.324l10.085-23.533A1.681,1.681,0,0,0,208.425,196.133Z"
+                    transform="translate(-174.033 -173.145)"
+                  />
+                  <path
+                    style="fill: #fff"
+                    d="M87.4,241.63a1.681,1.681,0,0,0-2.363-.262l-8.4,6.724a1.682,1.682,0,0,0,0,2.625l8.4,6.724a1.681,1.681,0,1,0,2.1-2.625L80.375,249.4l6.764-5.411A1.681,1.681,0,0,0,87.4,241.63Z"
+                    transform="translate(-67.487 -213.105)"
+                  />
+                  <path
+                    style="fill: #fff"
+                    d="M342.135,248.091l-8.4-6.724a1.681,1.681,0,1,0-2.1,2.625l6.764,5.411-6.764,5.411a1.681,1.681,0,1,0,2.1,2.625l8.4-6.724A1.681,1.681,0,0,0,342.135,248.091Z"
+                    transform="translate(-293.907 -213.104)"
+                  />
+                  <circle
+                    style="fill: #fff"
+                    cx="2"
+                    cy="2"
+                    r="2"
+                    transform="translate(6.688 7.575)"
+                  />
+                  <circle
+                    style="fill: #fff"
+                    cx="2"
+                    cy="2"
+                    r="2"
+                    transform="translate(13.688 7.575)"
+                  />
+                  <circle
+                    style="fill: #fff"
+                    cx="2"
+                    cy="2"
+                    r="2"
+                    transform="translate(19.688 7.575)"
+                  />
+                  <path
+                    style="fill: #fff"
+                    d="M332.681,64.362h10.085a1.681,1.681,0,0,0,0-3.362H332.681a1.681,1.681,0,0,0,0,3.362Z"
+                    transform="translate(-293.908 -53.276)"
+                  />
+                </g>
+              </svg>
+              <h3
+                class="py-4 font-weight-medium text-center text-white opacity-100 text-xl"
+              >
+                WEB DEVELOPMENT
+              </h3>
+              <p class="text-center text-white opacity-100 pb-3">
+                Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                Pellentesque vitae ante at elit fringilla ac at purus.
+              </p>
+              <a
+                href="https://www.fylehq.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-light text-danger px-3 py-1"
+              >
+                Read More
+              </a>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="images/image2.jpg" alt="Image 2" class="img-fluid" />
+            <div class="overlay">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="57.375"
+                height="57.151"
+                viewBox="0 0 57.375 57.151"
+              >
+                <g transform="translate(0 -1)">
+                  <path
+                    style="fill: #fff"
+                    d="M52.332,1H5.043A5.048,5.048,0,0,0,0,6.043V53.108a5.048,5.048,0,0,0,5.043,5.043h47.29a5.048,5.048,0,0,0,5.043-5.043V6.043A5.048,5.048,0,0,0,52.332,1ZM5.043,4.362h47.29a1.683,1.683,0,0,1,1.681,1.681v8.4H3.362v-8.4A1.683,1.683,0,0,1,5.043,4.362Zm47.29,50.427H5.043a1.683,1.683,0,0,1-1.681-1.681v-35.3H54.013v35.3A1.683,1.683,0,0,1,52.332,54.789Z"
+                  />
+                  <path
+                    style="fill: #fff"
+                    d="M208.425,196.133a1.681,1.681,0,0,0-2.207.883l-10.085,23.533a1.681,1.681,0,0,0,3.09,1.324l10.085-23.533A1.681,1.681,0,0,0,208.425,196.133Z"
+                    transform="translate(-174.033 -173.145)"
+                  />
+                  <path
+                    style="fill: #fff"
+                    d="M87.4,241.63a1.681,1.681,0,0,0-2.363-.262l-8.4,6.724a1.682,1.682,0,0,0,0,2.625l8.4,6.724a1.681,1.681,0,1,0,2.1-2.625L80.375,249.4l6.764-5.411A1.681,1.681,0,0,0,87.4,241.63Z"
+                    transform="translate(-67.487 -213.105)"
+                  />
+                  <path
+                    style="fill: #fff"
+                    d="M342.135,248.091l-8.4-6.724a1.681,1.681,0,1,0-2.1,2.625l6.764,5.411-6.764,5.411a1.681,1.681,0,1,0,2.1,2.625l8.4-6.724A1.681,1.681,0,0,0,342.135,248.091Z"
+                    transform="translate(-293.907 -213.104)"
+                  />
+                  <circle
+                    style="fill: #fff"
+                    cx="2"
+                    cy="2"
+                    r="2"
+                    transform="translate(6.688 7.575)"
+                  />
+                  <circle
+                    style="fill: #fff"
+                    cx="2"
+                    cy="2"
+                    r="2"
+                    transform="translate(13.688 7.575)"
+                  />
+                  <circle
+                    style="fill: #fff"
+                    cx="2"
+                    cy="2"
+                    r="2"
+                    transform="translate(19.688 7.575)"
+                  />
+                  <path
+                    style="fill: #fff"
+                    d="M332.681,64.362h10.085a1.681,1.681,0,0,0,0-3.362H332.681a1.681,1.681,0,0,0,0,3.362Z"
+                    transform="translate(-293.908 -53.276)"
+                  />
+                </g>
+              </svg>
+              <h3
+                class="py-4 font-weight-medium text-center text-white opacity-100 text-xl"
+              >
+                WEB DEVELOPMENT
+              </h3>
+              <p class="text-center text-white opacity-100 pb-3">
+                Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                Pellentesque vitae ante at elit fringilla ac at purus.
+              </p>
+              <a
+                href="https://www.fylehq.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-light text-danger px-3 py-1"
+              >
+                Read More
+              </a>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="images/image3.jpg" alt="Image 3" class="img-fluid" />
+            <div class="overlay">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="57.375"
+                height="57.151"
+                viewBox="0 0 57.375 57.151"
+              >
+                <g transform="translate(0 -1)">
+                  <path
+                    style="fill: #fff"
+                    d="M52.332,1H5.043A5.048,5.048,0,0,0,0,6.043V53.108a5.048,5.048,0,0,0,5.043,5.043h47.29a5.048,5.048,0,0,0,5.043-5.043V6.043A5.048,5.048,0,0,0,52.332,1ZM5.043,4.362h47.29a1.683,1.683,0,0,1,1.681,1.681v8.4H3.362v-8.4A1.683,1.683,0,0,1,5.043,4.362Zm47.29,50.427H5.043a1.683,1.683,0,0,1-1.681-1.681v-35.3H54.013v35.3A1.683,1.683,0,0,1,52.332,54.789Z"
+                  />
+                  <path
+                    style="fill: #fff"
+                    d="M208.425,196.133a1.681,1.681,0,0,0-2.207.883l-10.085,23.533a1.681,1.681,0,0,0,3.09,1.324l10.085-23.533A1.681,1.681,0,0,0,208.425,196.133Z"
+                    transform="translate(-174.033 -173.145)"
+                  />
+                  <path
+                    style="fill: #fff"
+                    d="M87.4,241.63a1.681,1.681,0,0,0-2.363-.262l-8.4,6.724a1.682,1.682,0,0,0,0,2.625l8.4,6.724a1.681,1.681,0,1,0,2.1-2.625L80.375,249.4l6.764-5.411A1.681,1.681,0,0,0,87.4,241.63Z"
+                    transform="translate(-67.487 -213.105)"
+                  />
+                  <path
+                    style="fill: #fff"
+                    d="M342.135,248.091l-8.4-6.724a1.681,1.681,0,1,0-2.1,2.625l6.764,5.411-6.764,5.411a1.681,1.681,0,1,0,2.1,2.625l8.4-6.724A1.681,1.681,0,0,0,342.135,248.091Z"
+                    transform="translate(-293.907 -213.104)"
+                  />
+                  <circle
+                    style="fill: #fff"
+                    cx="2"
+                    cy="2"
+                    r="2"
+                    transform="translate(6.688 7.575)"
+                  />
+                  <circle
+                    style="fill: #fff"
+                    cx="2"
+                    cy="2"
+                    r="2"
+                    transform="translate(13.688 7.575)"
+                  />
+                  <circle
+                    style="fill: #fff"
+                    cx="2"
+                    cy="2"
+                    r="2"
+                    transform="translate(19.688 7.575)"
+                  />
+                  <path
+                    style="fill: #fff"
+                    d="M332.681,64.362h10.085a1.681,1.681,0,0,0,0-3.362H332.681a1.681,1.681,0,0,0,0,3.362Z"
+                    transform="translate(-293.908 -53.276)"
+                  />
+                </g>
+              </svg>
+              <h3
+                class="py-4 font-weight-medium text-center text-white opacity-100 text-xl"
+              >
+                WEB DEVELOPMENT
+              </h3>
+              <p class="text-center text-white opacity-100 pb-3">
+                Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                Pellentesque vitae ante at elit fringilla ac at purus.
+              </p>
+              <a
+                href="https://www.fylehq.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-light text-danger px-3 py-1"
+              >
+                Read More
+              </a>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <img src="images/image1.jpg" alt="Image 1" class="img-fluid" />
+            <div class="overlay">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="57.375"
+                height="57.151"
+                viewBox="0 0 57.375 57.151"
+              >
+                <g transform="translate(0 -1)">
+                  <path
+                    style="fill: #fff"
+                    d="M52.332,1H5.043A5.048,5.048,0,0,0,0,6.043V53.108a5.048,5.048,0,0,0,5.043,5.043h47.29a5.048,5.048,0,0,0,5.043-5.043V6.043A5.048,5.048,0,0,0,52.332,1ZM5.043,4.362h47.29a1.683,1.683,0,0,1,1.681,1.681v8.4H3.362v-8.4A1.683,1.683,0,0,1,5.043,4.362Zm47.29,50.427H5.043a1.683,1.683,0,0,1-1.681-1.681v-35.3H54.013v35.3A1.683,1.683,0,0,1,52.332,54.789Z"
+                  />
+                  <path
+                    style="fill: #fff"
+                    d="M208.425,196.133a1.681,1.681,0,0,0-2.207.883l-10.085,23.533a1.681,1.681,0,0,0,3.09,1.324l10.085-23.533A1.681,1.681,0,0,0,208.425,196.133Z"
+                    transform="translate(-174.033 -173.145)"
+                  />
+                  <path
+                    style="fill: #fff"
+                    d="M87.4,241.63a1.681,1.681,0,0,0-2.363-.262l-8.4,6.724a1.682,1.682,0,0,0,0,2.625l8.4,6.724a1.681,1.681,0,1,0,2.1-2.625L80.375,249.4l6.764-5.411A1.681,1.681,0,0,0,87.4,241.63Z"
+                    transform="translate(-67.487 -213.105)"
+                  />
+                  <path
+                    style="fill: #fff"
+                    d="M342.135,248.091l-8.4-6.724a1.681,1.681,0,1,0-2.1,2.625l6.764,5.411-6.764,5.411a1.681,1.681,0,1,0,2.1,2.625l8.4-6.724A1.681,1.681,0,0,0,342.135,248.091Z"
+                    transform="translate(-293.907 -213.104)"
+                  />
+                  <circle
+                    style="fill: #fff"
+                    cx="2"
+                    cy="2"
+                    r="2"
+                    transform="translate(6.688 7.575)"
+                  />
+                  <circle
+                    style="fill: #fff"
+                    cx="2"
+                    cy="2"
+                    r="2"
+                    transform="translate(13.688 7.575)"
+                  />
+                  <circle
+                    style="fill: #fff"
+                    cx="2"
+                    cy="2"
+                    r="2"
+                    transform="translate(19.688 7.575)"
+                  />
+                  <path
+                    style="fill: #fff"
+                    d="M332.681,64.362h10.085a1.681,1.681,0,0,0,0-3.362H332.681a1.681,1.681,0,0,0,0,3.362Z"
+                    transform="translate(-293.908 -53.276)"
+                  />
+                </g>
+              </svg>
+              <h3
+                class="py-4 font-weight-medium text-center text-white opacity-100 text-xl"
+              >
+                WEB DEVELOPMENT
+              </h3>
+              <p class="text-center text-white opacity-100 pb-3">
+                Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                Pellentesque vitae ante at elit fringilla ac at purus.
+              </p>
+              <a
+                href="https://www.fylehq.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-light text-danger px-3 py-1"
+              >
+                Read More
+              </a>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="images/image2.jpg" alt="Image 2" class="img-fluid" />
+            <div class="overlay">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="57.375"
+                height="57.151"
+                viewBox="0 0 57.375 57.151"
+              >
+                <g transform="translate(0 -1)">
+                  <path
+                    style="fill: #fff"
+                    d="M52.332,1H5.043A5.048,5.048,0,0,0,0,6.043V53.108a5.048,5.048,0,0,0,5.043,5.043h47.29a5.048,5.048,0,0,0,5.043-5.043V6.043A5.048,5.048,0,0,0,52.332,1ZM5.043,4.362h47.29a1.683,1.683,0,0,1,1.681,1.681v8.4H3.362v-8.4A1.683,1.683,0,0,1,5.043,4.362Zm47.29,50.427H5.043a1.683,1.683,0,0,1-1.681-1.681v-35.3H54.013v35.3A1.683,1.683,0,0,1,52.332,54.789Z"
+                  />
+                  <path
+                    style="fill: #fff"
+                    d="M208.425,196.133a1.681,1.681,0,0,0-2.207.883l-10.085,23.533a1.681,1.681,0,0,0,3.09,1.324l10.085-23.533A1.681,1.681,0,0,0,208.425,196.133Z"
+                    transform="translate(-174.033 -173.145)"
+                  />
+                  <path
+                    style="fill: #fff"
+                    d="M87.4,241.63a1.681,1.681,0,0,0-2.363-.262l-8.4,6.724a1.682,1.682,0,0,0,0,2.625l8.4,6.724a1.681,1.681,0,1,0,2.1-2.625L80.375,249.4l6.764-5.411A1.681,1.681,0,0,0,87.4,241.63Z"
+                    transform="translate(-67.487 -213.105)"
+                  />
+                  <path
+                    style="fill: #fff"
+                    d="M342.135,248.091l-8.4-6.724a1.681,1.681,0,1,0-2.1,2.625l6.764,5.411-6.764,5.411a1.681,1.681,0,1,0,2.1,2.625l8.4-6.724A1.681,1.681,0,0,0,342.135,248.091Z"
+                    transform="translate(-293.907 -213.104)"
+                  />
+                  <circle
+                    style="fill: #fff"
+                    cx="2"
+                    cy="2"
+                    r="2"
+                    transform="translate(6.688 7.575)"
+                  />
+                  <circle
+                    style="fill: #fff"
+                    cx="2"
+                    cy="2"
+                    r="2"
+                    transform="translate(13.688 7.575)"
+                  />
+                  <circle
+                    style="fill: #fff"
+                    cx="2"
+                    cy="2"
+                    r="2"
+                    transform="translate(19.688 7.575)"
+                  />
+                  <path
+                    style="fill: #fff"
+                    d="M332.681,64.362h10.085a1.681,1.681,0,0,0,0-3.362H332.681a1.681,1.681,0,0,0,0,3.362Z"
+                    transform="translate(-293.908 -53.276)"
+                  />
+                </g>
+              </svg>
+              <h3
+                class="py-4 font-weight-medium text-center text-white opacity-100 text-xl"
+              >
+                WEB DEVELOPMENT
+              </h3>
+              <p class="text-center text-white opacity-100 pb-3">
+                Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                Pellentesque vitae ante at elit fringilla ac at purus.
+              </p>
+              <a
+                href="https://www.fylehq.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-light text-danger px-3 py-1"
+              >
+                Read More
+              </a>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="images/image3.jpg" alt="Image 3" class="img-fluid" />
+            <div class="overlay">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="57.375"
+                height="57.151"
+                viewBox="0 0 57.375 57.151"
+              >
+                <g transform="translate(0 -1)">
+                  <path
+                    style="fill: #fff"
+                    d="M52.332,1H5.043A5.048,5.048,0,0,0,0,6.043V53.108a5.048,5.048,0,0,0,5.043,5.043h47.29a5.048,5.048,0,0,0,5.043-5.043V6.043A5.048,5.048,0,0,0,52.332,1ZM5.043,4.362h47.29a1.683,1.683,0,0,1,1.681,1.681v8.4H3.362v-8.4A1.683,1.683,0,0,1,5.043,4.362Zm47.29,50.427H5.043a1.683,1.683,0,0,1-1.681-1.681v-35.3H54.013v35.3A1.683,1.683,0,0,1,52.332,54.789Z"
+                  />
+                  <path
+                    style="fill: #fff"
+                    d="M208.425,196.133a1.681,1.681,0,0,0-2.207.883l-10.085,23.533a1.681,1.681,0,0,0,3.09,1.324l10.085-23.533A1.681,1.681,0,0,0,208.425,196.133Z"
+                    transform="translate(-174.033 -173.145)"
+                  />
+                  <path
+                    style="fill: #fff"
+                    d="M87.4,241.63a1.681,1.681,0,0,0-2.363-.262l-8.4,6.724a1.682,1.682,0,0,0,0,2.625l8.4,6.724a1.681,1.681,0,1,0,2.1-2.625L80.375,249.4l6.764-5.411A1.681,1.681,0,0,0,87.4,241.63Z"
+                    transform="translate(-67.487 -213.105)"
+                  />
+                  <path
+                    style="fill: #fff"
+                    d="M342.135,248.091l-8.4-6.724a1.681,1.681,0,1,0-2.1,2.625l6.764,5.411-6.764,5.411a1.681,1.681,0,1,0,2.1,2.625l8.4-6.724A1.681,1.681,0,0,0,342.135,248.091Z"
+                    transform="translate(-293.907 -213.104)"
+                  />
+                  <circle
+                    style="fill: #fff"
+                    cx="2"
+                    cy="2"
+                    r="2"
+                    transform="translate(6.688 7.575)"
+                  />
+                  <circle
+                    style="fill: #fff"
+                    cx="2"
+                    cy="2"
+                    r="2"
+                    transform="translate(13.688 7.575)"
+                  />
+                  <circle
+                    style="fill: #fff"
+                    cx="2"
+                    cy="2"
+                    r="2"
+                    transform="translate(19.688 7.575)"
+                  />
+                  <path
+                    style="fill: #fff"
+                    d="M332.681,64.362h10.085a1.681,1.681,0,0,0,0-3.362H332.681a1.681,1.681,0,0,0,0,3.362Z"
+                    transform="translate(-293.908 -53.276)"
+                  />
+                </g>
+              </svg>
+              <h3
+                class="py-4 font-weight-medium text-center text-white opacity-100 text-xl"
+              >
+                WEB DEVELOPMENT
+              </h3>
+              <p class="text-center text-white opacity-100 pb-3">
+                Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                Pellentesque vitae ante at elit fringilla ac at purus.
+              </p>
+              <a
+                href="https://www.fylehq.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-light text-danger px-3 py-1"
+              >
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto py-4 pt-4 w-75">
+      <div class="text-center mb-4">
+        <h3
+          class="text-center font-weight-bold text-danger opacity-100 py-3 m-text"
+        >
+          WHY CHOOSE US
+        </h3>
+        <h2 class="text-3xl font-weight-bold bb pb-5">WHY WE ARE BEST</h2>
+      </div>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+        <div class="text-center">
+          <div class="mb-3">
+            <svg
+              class="mx-auto w-3 h-3 text-gray-800"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 11c.28 0 .55.03.81.08l.89-.89a2 2 0 112.82 2.82l-.89.89c.05.26.08.53.08.81 0 1.105-.895 2-2 2s-2-.895-2-2 .895-2 2-2z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 19c-3.866 0-7-3.134-7-7s3.134-7 7-7 7 3.134 7 7-3.134 7-7 7z"
+              />
+            </svg>
+          </div>
+          <h4 class="text-xl font-weight-bold mb-2">
+            Clarified Vision and Target
+          </h4>
+          <p class="text-gray-600">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy.
+          </p>
+        </div>
+        <div class="text-center">
+          <div class="mb-3">
+            <svg
+              class="mx-auto w-3 h-3 text-gray-800"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12h6m-2 4h-2m5 5H8c-.933 0-1.75-.333-2.449-.95C5.2 19.8 5 18.933 5 18V6c0-.933.2-1.8.551-2.45C6.25 3.333 7.067 3 8 3h8c.933 0 1.75.333 2.449.95C18.8 4.2 19 5.067 19 6v12c0 .933-.2 1.8-.551 2.45-.7.617-1.517.95-2.449.95z"
+              />
+            </svg>
+          </div>
+          <h4 class="text-xl font-weight-bold mb-2">High Performance</h4>
+          <p class="text-gray-600">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy.
+          </p>
+        </div>
+        <div class="text-center">
+          <div class="mb-3">
+            <svg
+              class="mx-auto w-3 h-3 text-gray-800"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M10 9v6m4-6v6m-9 4h14c1.105 0 2-.895 2-2V7c0-1.105-.895-2-2-2H5c-1.105 0-2 .895-2 2v10c0 1.105.895 2 2 2z"
+              />
+            </svg>
+          </div>
+          <h4 class="text-xl font-weight-bold mb-2">Maintain Security</h4>
+          <p class="text-gray-600">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy.
+          </p>
+        </div>
+        <div class="text-center">
+          <div class="mb-3">
+            <svg
+              class="mx-auto w-3 h-3 text-gray-800"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 17V9a3 3 0 013-3h0a3 3 0 013 3v8m4 0H8c-.933 0-1.75-.333-2.449-.95C5.2 16.8 5 15.933 5 15V5c0-.933.2-1.8.551-2.45C6.25 2.333 7.067 2 8 2h8c.933 0 1.75.333 2.449.95C18.8 3.2 19 4.067 19 5v10c0 .933-.2 1.8-.551 2.45-.7.617-1.517.95-2.449.95z"
+              />
+            </svg>
+          </div>
+          <h4 class="text-xl font-weight-bold mb-2">
+            Better Strategy and Quality
+          </h4>
+          <p class="text-gray-600">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto p-5 w-auto">
+      <div class="text-center text-danger opacity-100 m-text">OUR PROJECTS</div>
+      <h2 class="text-3xl font-weight-bold mb-4 text-center py-4 bb">
+        WHY WE ARE BEST
+      </h2>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6 col-lg-4 pt-2">
+          <img
+            src="images/image1.jpg"
+            alt="Project Image"
+            class="w-100 rounded shadow-md"
+            id="projectImage"
+            style="max-height: 94%"
+          />
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 p-2">
+          <div
+            class="mb-3 p-3 border border-gray-200 rounded cursor-pointer hover-bg-danger hover-text-white ttt"
+            onclick="setSelectedImage('images/image1.jpg')"
+          >
+            <h4 class="text-xl font-weight-bold mb-2">
+              Genderless Kei – Japan's Hot
+            </h4>
+            <p>
+              Set to launch on the manufacturer's new A330neo aircraft in 2017,
+              it's offering lots of
+            </p>
+          </div>
+          <div
+            class="mb-3 p-3 border border-gray-200 rounded cursor-pointer hover-bg-danger hover-text-white ttt"
+            onclick="setSelectedImage('images/image2.jpg')"
+          >
+            <h4 class="text-xl font-weight-bold mb-2">
+              Better Strategy and Quality
+            </h4>
+            <p>
+              Set to launch on the manufacturer's new A330neo aircraft in 2017,
+              it's offering lots of
+            </p>
+          </div>
+          <div
+            class="mb-3 p-3 border border-gray-200 rounded cursor-pointer hover-bg-danger hover-text-white ttt"
+            onclick="setSelectedImage('images/image3.jpg')"
+          >
+            <h4 class="text-xl font-weight-bold mb-2">Another Project</h4>
+            <p>
+              Set to launch on the manufacturer's new A330neo aircraft in 2017,
+              it's offering lots of
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="background-color: #f8f9fa" class="pb-4">
+      <div
+        class="d-flex flex-column align-items-center justify-content-center py-2 bg-gray-100"
+      >
+        <h2
+          class="font-semibold pb-4 pt-10 text-danger uppercase opacity-100 m-text"
+        >
+          EXPERTS GROWTH
+        </h2>
+        <h2 class="text-4xl font-bold mb-10 bb">OUR COMPANY GROWTH</h2>
+        <div id="growth-component"></div>
+      </div>
+      <div id="growth-component1">
+        <div class="stats-container pb-4">
+          <div class="stat">
+            <i class="fas fa-heart"></i>
+            <div class="stat-info">
+              <span class="number">199+ <br /></span>
+              <span class="label">Satisfied Customers</span>
+            </div>
+          </div>
+
+          <div class="stat">
+            <i class="fas fa-clock"></i>
+            <div class="stat-info">
+              <span class="number">1591+<br /></span>
+              <span class="label">Days of Operation</span>
+            </div>
+          </div>
+
+          <div class="stat">
+            <i class="fas fa-check"></i>
+            <div class="stat-info">
+              <span class="number">283+<br /></span>
+              <span class="label">Complete Projects</span>
+            </div>
+          </div>
+
+          <div class="stat">
+            <i class="fas fa-trophy"></i>
+            <div class="stat-info">
+              <span class="number">75+<br /></span>
+              <span class="label">Win Awards</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+<div class="container py-12">
+        <div class="text-center">
+          <h2 class="text-danger text-xl font-semibold m-text">
+            CLIENT'S FEEDBACK
+          </h2>
+          <h1 class="text-black text-4xl font-bold pt-6">
+            PEOPLE SAY'S ABOUT US !
+          </h1>
+          <p class="text-black text-lg font-normal pt-10 max-w-2xl mx-auto">
+            Jannat Tumpa The standard chunk of Lorem Ipsum used since the 1500s
+            is reproduced below for those interested. Sections Bonorum et
+            Malorum original.
+          </p>
+          <div class="d-flex flex-row justify-content-center py-4">
+            <p class="text-danger font-bold me-2">JANNAT TUMPA -&ensp;</p>
+            <p class="text-gray-700 font-normal">
+              COO, AMERIMAR ENTERPRISES, INC.
+            </p>
+          </div>
+        </div>
+      </div>
+    <div class="py-10" style="background-color: #dc3545">
+      <div
+        class="container mx-auto flex justify-center align-middle items-center py-12"
+      >
+        <img
+          src="images/footer.png"
+          alt="Profile Picture"
+          width="w-full"
+          height="37"
+          class="rounded"
+          style="padding-left: 40vh"
+        />
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      function setSelectedImage(imageUrl) {
+        const projectImage = document.getElementById("projectImage");
+        projectImage.src = imageUrl;
+      }
+    </script>
+  </body>
+</html>
